@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# fullstack-learning
-My full stack development learning 
-=======
 # 🚀 Full Stack Development Learning
 
 This repository documents my complete journey to becoming a **Full Stack Developer** — from fundamentals to real-world projects.
@@ -16,11 +12,11 @@ I am learning step-by-step with a strong focus on:
 
 ## 🧱 Tech Stack Covered
 
-- **HTML5** – Structure & semantics
-- **CSS3** – Layout, responsive design
-- **JavaScript** – Logic & interactivity
-- **Git & GitHub** – Version control
-- **Projects** – Real-world applications
+- **HTML5** – Structure & semantics  
+- **CSS3** – Layout, responsive design  
+- **JavaScript** – Logic & interactivity  
+- **Git & GitHub** – Version control  
+- **Projects** – Real-world applications  
 
 (More technologies will be added as I progress.)
 
@@ -40,9 +36,9 @@ This repository grows through **daily meaningful commits**, not random uploads.
 ## 🛠️ How to Use This Repo
 
 Each folder contains:
-- Topic-wise practice files
-- Clean, beginner-friendly code
-- Progressive improvement over time
+- Topic-wise practice files  
+- Clean, beginner-friendly code  
+- Progressive improvement over time  
 
 Anyone can follow this repository to understand how a beginner evolves into a full-stack developer.
 
@@ -50,11 +46,9 @@ Anyone can follow this repository to understand how a beginner evolves into a fu
 
 ## 🌱 Long-Term Goal
 
-- Become a **job-ready full stack developer**
-- Start **freelancing**
-
+- Become a **job-ready full stack developer**  
+- Start **freelancing**  
 
 ---
 
 📌 _This repository is actively maintained as part of my learning journey._
->>>>>>> 59d6662 (fullstack-learning)
