@@ -1,0 +1,49 @@
+/* =========================
+   DAY 2 CSS FUNDAMENTALS
+========================= */
+
+/* COLORS */
+body {
+    background-color: #f0f8ff; /* HEX color */
+    font-family: Arial, sans-serif;
+}
+
+/* TEXT + FONT */
+h1 {
+    color: rgb(255, 0, 0); /* RGB color */
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* BOX MODEL DEMO */
+.card {
+    /* Size */
+    width: 300px;
+    height: auto;
+
+    /* Background */
+    background-color: lightyellow;
+
+    /* Border */
+    border: 2px solid black;
+
+    /* Spacing */
+    padding: 20px;
+    margin: 40px auto;
+
+    /* Text */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* FONT STYLING */
+.card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
