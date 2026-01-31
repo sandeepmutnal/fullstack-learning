@@ -1,0 +1,26 @@
+/* Element Selector */
+p {
+  font-size: 18px;
+}
+
+/* Class Selector */
+.myclass {
+  color: green;
+  font-weight: bold;
+}
+
+/* ID Selector */
+#myid {
+  color: red;
+  text-align: center;
+}
+
+/* Group Selector */
+h1, h2, p {
+  font-family: Arial, sans-serif;
+}
+
+/* Descendant Selector */
+div p {
+  color: purple;
+}
