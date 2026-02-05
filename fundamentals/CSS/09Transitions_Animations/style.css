@@ -1,0 +1,28 @@
+button {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: green;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: red;
+  margin-top: 20px;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
