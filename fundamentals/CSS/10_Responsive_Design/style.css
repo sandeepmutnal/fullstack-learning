@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  flex: 1 1 200px;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .item {
+    flex: 1 1 100%;
+  }
+}
