@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="login-form">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email (example@gmail.com)" required>
+
+        <div class="password-box">
+            <input type="password" placeholder="Password" id="password" required>
+            <span onclick="togglePassword()">Show</span>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="signup">
+            Don't have an account? <a href="#">Sign up</a>
+        </p>
+    </form>
+</div>
+
+<script>
+function togglePassword() {
+    const password = document.getElementById("password");
+    password.type = password.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

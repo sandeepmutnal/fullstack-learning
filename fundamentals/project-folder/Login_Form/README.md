@@ -13,6 +13,14 @@ A responsive login form built using HTML and CSS.
 - Hover effects
 - Responsive design
 
+## New Features Added
+- Show/Hide password
+- Remember me checkbox
+- Forgot password link
+- Input focus effect
+- Button animation
+- Mobile responsive improvement
+
 ## Technologies
 - HTML
 - CSS
