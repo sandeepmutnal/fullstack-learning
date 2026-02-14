@@ -21,12 +21,7 @@ This project helps practice:
 - HTML5
 - CSS3
 
-## Project Structure
 
-product-card/
-│
-├── index.html
-└── style.css
 
 ## Author
 Created by me while learning Full Stack Development.

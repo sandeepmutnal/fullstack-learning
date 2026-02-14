@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -11,9 +11,14 @@ body {
   background: white;
   width: 300px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
 }
 
 .card img {
@@ -21,21 +26,41 @@ body {
   border-radius: 10px;
 }
 
+.rating {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
 .price {
   font-size: 22px;
   color: green;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 button {
-  background: black;
-  color: white;
   border: none;
   padding: 10px;
   width: 100%;
   cursor: pointer;
+  margin-top: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-button:hover {
-  background: #444;
+.buy {
+  background: black;
+  color: white;
+}
+
+.buy:hover {
+  background: #333;
+}
+
+.cart {
+  background: #eaeaea;
+}
+
+.cart:hover {
+  background: #d6d6d6;
 }
