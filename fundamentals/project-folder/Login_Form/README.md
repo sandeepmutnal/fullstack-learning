@@ -2,24 +2,16 @@
 
 This project is part of my Full Stack learning journey.
 
-## Description
-A responsive login form built using HTML and CSS.
+A modern and responsive login form built using **HTML and CSS**.
 
-## Concepts Used
-- Flexbox
-- Gradient background
-- Box shadow
-- Form styling
-- Hover effects
+## Features
 - Responsive design
-
-## New Features Added
-- Show/Hide password
+- Gradient background
+- Floating labels
+- Password strength indicator (UI)
 - Remember me checkbox
-- Forgot password link
-- Input focus effect
-- Button animation
-- Mobile responsive improvement
+- Social login buttons
+- Button hover animation
 
 ## Technologies
 - HTML

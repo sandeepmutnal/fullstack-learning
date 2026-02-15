@@ -2,23 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Modern Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <form class="login-form">
-        <h2>Login</h2>
+        <h2>Welcome Back 👋</h2>
 
-        <input type="email" placeholder="Email (example@gmail.com)" required>
-
-        <div class="password-box">
-            <input type="password" placeholder="Password" id="password" required>
-            <span onclick="togglePassword()">Show</span>
+        <!-- Email Field -->
+        <div class="input-group">
+            <input type="email" required>
+            <label>Email Address</label>
         </div>
 
+        <!-- Password Field -->
+        <div class="input-group">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+
+        <!-- Password Strength -->
+        <div class="strength">
+            <div class="strength-bar"></div>
+        </div>
+
+        <!-- Options -->
         <div class="options">
             <label>
                 <input type="checkbox"> Remember me
@@ -28,18 +38,20 @@
 
         <button type="submit">Login</button>
 
+        <!-- Social Login -->
+        <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-buttons">
+                <button class="google">Google</button>
+                <button class="facebook">Facebook</button>
+            </div>
+        </div>
+
         <p class="signup">
             Don't have an account? <a href="#">Sign up</a>
         </p>
     </form>
 </div>
-
-<script>
-function togglePassword() {
-    const password = document.getElementById("password");
-    password.type = password.type === "password" ? "text" : "password";
-}
-</script>
 
 </body>
 </html>
