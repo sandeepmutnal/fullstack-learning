@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Bubbling & Capturing</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align:center;
+        }
+
+        .box{
+            padding:40px;
+            margin:20px;
+            border:3px solid black;
+        }
+
+        #outer{
+            background:lightblue;
+        }
+
+        #middle{
+            background:lightgreen;
+        }
+
+        #inner{
+            background:lightcoral;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h2>JavaScript Event Bubbling & Capturing</h2>
+
+<div id="outer" class="box">
+
+    OUTER DIV
+
+    <div id="middle" class="box">
+
+        MIDDLE DIV
+
+        <button id="inner" class="box">
+            CLICK ME
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
