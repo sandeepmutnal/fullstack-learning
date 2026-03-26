@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Day 16 JavaScript Variables</title>
+
+<style>
+
+body {
+font-family: Arial;
+text-align: center;
+padding: 50px;
+}
+
+button {
+padding: 15px;
+font-size: 18px;
+background-color: black;
+color: white;
+border: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Variables Example</h1>
+
+<p id="output">Click button to see result</p>
+
+<button onclick="showInfo()">Show Info</button>
+
+<script>
+
+function showInfo() {
+
+let name = "Vinsan";
+
+let goal = "Become Freelance Developer";
+
+document.getElementById("output").innerHTML =
+"Hello " + name + "! Your goal is: " + goal;
+
+}
+
+</script>
+
+</body>
+
+</html>
