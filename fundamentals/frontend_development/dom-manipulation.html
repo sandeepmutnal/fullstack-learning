@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 17 DOM Manipulation</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+button {
+
+padding: 15px;
+font-size: 18px;
+margin: 10px;
+background-color: black;
+color: white;
+border: none;
+
+}
+
+img {
+
+width: 200px;
+margin-top: 20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 id="title">Welcome to My Website</h1>
+
+<p id="text">Click buttons to change content</p>
+
+<img id="image"
+src="https://via.placeholder.com/200">
+
+<br>
+
+<button onclick="changeText()">Change Text</button>
+
+<button onclick="changeColor()">Change Color</button>
+
+<button onclick="changeImage()">Change Image</button>
+
+<script>
+
+function changeText() {
+
+document.getElementById("text").innerHTML =
+"You are becoming a frontend developer 🚀";
+
+}
+
+function changeColor() {
+
+document.getElementById("title").style.color =
+"blue";
+
+}
+
+function changeImage() {
+
+document.getElementById("image").src =
+"https://via.placeholder.com/200/0000FF/FFFFFF";
+
+}
+
+</script>
+
+</body>
+
+</html>
