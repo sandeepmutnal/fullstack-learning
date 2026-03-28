@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 18 JavaScript Events</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+button {
+
+padding: 15px;
+font-size: 18px;
+margin: 10px;
+background-color: black;
+color: white;
+border: none;
+
+}
+
+input {
+
+padding: 10px;
+font-size: 16px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Events Example</h1>
+
+<p id="message">Type your name below</p>
+
+<input type="text" id="nameInput"
+oninput="showName()">
+
+<br><br>
+
+<button onclick="showWelcome()">Click Me</button>
+
+<script>
+
+function showName() {
+
+let name = document.getElementById("nameInput").value;
+
+document.getElementById("message").innerHTML =
+"Hello " + name + "! Welcome 🚀";
+
+}
+
+function showWelcome() {
+
+alert("Great! You are learning JavaScript Events");
+
+}
+
+</script>
+
+</body>
+
+</html>
