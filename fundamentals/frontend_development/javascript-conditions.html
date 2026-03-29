@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 19 JavaScript Conditions</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+input {
+
+padding: 10px;
+font-size: 16px;
+
+}
+
+button {
+
+padding: 12px;
+font-size: 16px;
+margin-top: 10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Login Check Example</h1>
+
+<p>Enter password:</p>
+
+<input type="password" id="password">
+
+<br>
+
+<button onclick="checkPassword()">Login</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkPassword() {
+
+let pass = document.getElementById("password").value;
+
+if(pass === "1234") {
+
+document.getElementById("result").innerHTML =
+"Login Successful ✅";
+
+}
+
+else {
+
+document.getElementById("result").innerHTML =
+"Wrong Password ❌";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
