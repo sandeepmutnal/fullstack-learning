@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 22 JavaScript Objects</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+button {
+
+padding: 15px;
+font-size: 18px;
+background-color: black;
+color: white;
+border: none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Object Example</h1>
+
+<p id="output">Click button to see profile</p>
+
+<button onclick="showProfile()">Show Profile</button>
+
+<script>
+
+function showProfile() {
+
+let person = {
+
+name: "Vinsan",
+age: 22,
+role: "Future Tech Leader"
+
+};
+
+document.getElementById("output").innerHTML =
+"Name: " + person.name + "<br>" +
+"Age: " + person.age + "<br>" +
+"Role: " + person.role;
+
+}
+
+</script>
+
+</body>
+
+</html>
