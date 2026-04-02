@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 23 Array of Objects</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+button {
+
+padding: 15px;
+font-size: 18px;
+background-color: black;
+color: white;
+border: none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Students Dashboard</h1>
+
+<p id="output">Click button to show students</p>
+
+<button onclick="showStudents()">Show Students</button>
+
+<script>
+
+function showStudents() {
+
+let students = [
+
+{name:"Vinsan", role:"Frontend Developer"},
+{name:"Rahul", role:"Backend Developer"},
+{name:"Priya", role:"UI Designer"}
+
+];
+
+let text = "";
+
+for(let i = 0; i < students.length; i++) {
+
+text = text +
+
+"Name: " + students[i].name +
+
+" | Role: " + students[i].role +
+
+"<br>";
+
+}
+
+document.getElementById("output").innerHTML = text;
+
+}
+
+</script>
+
+</body>
+
+</html>
