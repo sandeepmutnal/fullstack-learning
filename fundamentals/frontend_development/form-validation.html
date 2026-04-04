@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 25 Form Validation</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+padding: 50px;
+
+}
+
+input {
+
+padding: 10px;
+margin: 10px;
+font-size: 16px;
+
+}
+
+button {
+
+padding: 12px;
+font-size: 16px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Contact Form</h1>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<br>
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<br>
+
+<button onclick="validateForm()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+
+function validateForm() {
+
+let name = document.getElementById("name").value;
+
+let email = document.getElementById("email").value;
+
+if(name === "" || email === "") {
+
+document.getElementById("message").innerHTML =
+"Please fill all fields ❌";
+
+}
+
+else {
+
+document.getElementById("message").innerHTML =
+"Form submitted successfully ✅";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
