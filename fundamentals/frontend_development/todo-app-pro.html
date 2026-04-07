@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 27 ToDo App PRO</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+margin-top: 50px;
+
+}
+
+input {
+
+padding: 10px;
+width: 250px;
+font-size: 16px;
+
+}
+
+button {
+
+padding: 10px;
+margin-left: 5px;
+cursor: pointer;
+
+}
+
+li {
+
+margin: 10px;
+font-size: 18px;
+
+}
+
+.deleteBtn {
+
+background-color: red;
+color: white;
+border: none;
+padding: 5px 10px;
+margin-left: 10px;
+
+}
+
+.doneBtn {
+
+background-color: green;
+color: white;
+border: none;
+padding: 5px 10px;
+margin-left: 5px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>My ToDo List PRO</h1>
+
+<input id="taskInput" placeholder="Enter task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+<script>
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+displayTasks();
+
+
+function addTask() {
+
+let taskInput = document.getElementById("taskInput");
+
+let task = taskInput.value;
+
+if(task === "") {
+
+alert("Enter a task");
+
+return;
+
+}
+
+tasks.push({text: task, done: false});
+
+localStorage.setItem("tasks", JSON.stringify(tasks));
+
+taskInput.value = "";
+
+displayTasks();
+
+}
+
+
+function displayTasks() {
+
+let list = document.getElementById("taskList");
+
+list.innerHTML = "";
+
+tasks.forEach((task, index) => {
+
+let li = document.createElement("li");
+
+li.innerHTML =
+
+(task.done ? "<strike>" + task.text + "</strike>" : task.text)
+
++
+
+`<button class="doneBtn" onclick="markDone(${index})">Done</button>
+
+<button class="deleteBtn" onclick="deleteTask(${index})">Delete</button>`;
+
+list.appendChild(li);
+
+});
+
+}
+
+
+function deleteTask(index) {
+
+tasks.splice(index, 1);
+
+localStorage.setItem("tasks", JSON.stringify(tasks));
+
+displayTasks();
+
+}
+
+
+function markDone(index) {
+
+tasks[index].done = !tasks[index].done;
+
+localStorage.setItem("tasks", JSON.stringify(tasks));
+
+displayTasks();
+
+}
+
+</script>
+
+</body>
+
+</html>
