@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Day 28 Image Slider</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+text-align: center;
+margin-top: 50px;
+
+}
+
+img {
+
+width: 400px;
+height: 250px;
+border-radius: 10px;
+
+}
+
+button {
+
+padding: 10px;
+margin: 10px;
+font-size: 16px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Image Slider</h1>
+
+<img id="slider" src="https://picsum.photos/id/1015/400/250">
+
+<br>
+
+<button onclick="previous()">Previous</button>
+
+<button onclick="next()">Next</button>
+
+<script>
+
+let images = [
+
+"https://picsum.photos/id/1015/400/250",
+
+"https://picsum.photos/id/1016/400/250",
+
+"https://picsum.photos/id/1018/400/250",
+
+"https://picsum.photos/id/1020/400/250"
+
+];
+
+let index = 0;
+
+
+function next() {
+
+index++;
+
+if(index >= images.length) {
+
+index = 0;
+
+}
+
+document.getElementById("slider").src = images[index];
+
+}
+
+
+function previous() {
+
+index--;
+
+if(index < 0) {
+
+index = images.length - 1;
+
+}
+
+document.getElementById("slider").src = images[index];
+
+}
+
+</script>
+
+</body>
+
+</html>
