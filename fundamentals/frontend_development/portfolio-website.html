@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>My Portfolio</title>
+
+<style>
+
+body {
+
+font-family: Arial;
+margin: 0;
+padding: 0;
+
+}
+
+header {
+
+background: #333;
+color: white;
+text-align: center;
+padding: 40px;
+
+}
+
+section {
+
+padding: 40px;
+
+}
+
+.projects {
+
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+
+}
+
+.card {
+
+border: 1px solid #ddd;
+padding: 20px;
+border-radius: 10px;
+
+}
+
+footer {
+
+background: #333;
+color: white;
+text-align: center;
+padding: 20px;
+
+}
+
+button {
+
+padding: 10px;
+font-size: 16px;
+
+}
+
+.dark {
+
+background: black;
+color: white;
+
+}
+
+</style>
+
+</head>
+
+<body id="page">
+
+<header>
+
+<h1>Your Name</h1>
+
+<p>Frontend Developer | JavaScript Learner | Future AI Engineer</p>
+
+<button onclick="toggleMode()">Toggle Dark Mode</button>
+
+</header>
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+
+I am learning web development and building real projects daily.
+I create responsive websites and JavaScript applications.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="card">Calculator App</div>
+
+<div class="card">ToDo List App</div>
+
+<div class="card">Image Slider</div>
+
+<div class="card">Form Validation System</div>
+
+<div class="card">Dark Mode Toggle</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact Me</h2>
+
+<p>Email: your@email.com</p>
+
+<p>GitHub: github.com/yourusername</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 My Portfolio Website</p>
+
+</footer>
+
+<script>
+
+let page = document.getElementById("page");
+
+if(localStorage.getItem("mode") === "dark"){
+
+page.classList.add("dark");
+
+}
+
+function toggleMode(){
+
+page.classList.toggle("dark");
+
+if(page.classList.contains("dark")){
+
+localStorage.setItem("mode","dark");
+
+}
+
+else{
+
+localStorage.setItem("mode","light");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
